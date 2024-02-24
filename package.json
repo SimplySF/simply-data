@@ -1,0 +1,219 @@
+{
+  "name": "@simplysf/simply-data",
+  "description": "Utilities for working with data",
+  "version": "1.0.0",
+  "author": "@ClayChipps",
+  "bugs": "https://github.com/SimplySF/simply-data/issues",
+  "dependencies": {
+    "@oclif/core": "^3.19.2",
+    "@salesforce/core": "^6.5.3",
+    "@salesforce/kit": "^3.0.15",
+    "@salesforce/sf-plugins-core": "^5.0.13",
+    "csv-parse": "^5.5.3",
+    "csv-writer": "^1.6.0",
+    "form-data": "^4.0.0",
+    "got": "13.0.0",
+    "p-queue": "^8.0.1"
+  },
+  "devDependencies": {
+    "@oclif/plugin-command-snapshot": "^5.0.8",
+    "@salesforce/cli-plugins-testkit": "^5.1.9",
+    "@salesforce/plugin-command-reference": "^3.0.68",
+    "@salesforce/ts-sinon": "1.4.19",
+    "@simplysf/dev-scripts": "^2.0.0",
+    "@types/shelljs": "^0.8.14",
+    "eslint-plugin-sf-plugin": "^1.17.3",
+    "oclif": "^4.4.17",
+    "shelljs": "^0.8.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "/lib",
+    "/messages",
+    "/npm-shrinkwrap.json",
+    "/oclif.lock",
+    "/oclif.manifest.json"
+  ],
+  "homepage": "https://github.com/SimplySF/simply-data",
+  "keywords": [
+    "force",
+    "salesforce",
+    "sfdx",
+    "salesforcedx",
+    "sfdx-plugin",
+    "sf-plugin",
+    "sf"
+  ],
+  "license": "BSD-3-Clause",
+  "oclif": {
+    "bin": "sf",
+    "commands": "./lib/commands",
+    "devPlugins": [
+      "@oclif/plugin-command-snapshot",
+      "@oclif/plugin-help",
+      "@salesforce/plugin-command-reference"
+    ],
+    "flexibleTaxonomy": true,
+    "plugins": [],
+    "repositoryPrefix": "<%- repo %>/blob/<%- version %>/<%- commandPath %>",
+    "topics": {
+      "simply": {
+        "description": "Commands for simplifying Salesforce",
+        "subtopics": {
+          "data": {
+            "description": "Commands for working with data",
+            "subtopics": {
+              "files": {
+                "description": "Commands for working with files"
+              }
+            }
+          }
+        }
+      }
+    },
+    "topicSeparator": " "
+  },
+  "repository": "SimplySF/simply-data",
+  "scripts": {
+    "build": "wireit",
+    "clean": "sf-clean",
+    "clean-all": "sf-clean all",
+    "compile": "wireit",
+    "docs": "sf-docs",
+    "format": "wireit",
+    "link-check": "wireit",
+    "lint": "wireit",
+    "postpack": "sf-clean",
+    "prepack": "sf-prepack",
+    "prepare": "sf-install",
+    "test": "wireit",
+    "test:nuts": "nyc mocha \"**/*.nut.ts\" --slow 4500 --timeout 1200000 --parallel --jobs 5",
+    "test:only": "wireit",
+    "test:watch": "mocha --watch \"./test/**/*.test.ts\"",
+    "version": "oclif readme"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "wireit": {
+    "build": {
+      "dependencies": [
+        "compile",
+        "lint"
+      ]
+    },
+    "compile": {
+      "command": "tsc -p . --pretty --incremental",
+      "files": [
+        "src/**/*.ts",
+        "**/tsconfig.json",
+        "messages/**"
+      ],
+      "output": [
+        "lib/**",
+        "*.tsbuildinfo"
+      ],
+      "clean": "if-file-deleted"
+    },
+    "format": {
+      "command": "prettier --write \"+(src|test|schemas)/**/*.+(ts|js|json)|command-snapshot.json\"",
+      "files": [
+        "src/**/*.ts",
+        "test/**/*.ts",
+        "schemas/**/*.json",
+        "command-snapshot.json",
+        ".prettier*"
+      ],
+      "output": []
+    },
+    "lint": {
+      "command": "eslint src test --color --cache --cache-location .eslintcache",
+      "files": [
+        "src/**/*.ts",
+        "test/**/*.ts",
+        "messages/**",
+        "**/.eslint*",
+        "**/tsconfig.json"
+      ],
+      "output": []
+    },
+    "test": {
+      "dependencies": [
+        "test:compile",
+        "test:only",
+        "test:command-reference",
+        "test:deprecation-policy",
+        "lint",
+        "test:json-schema",
+        "link-check"
+      ]
+    },
+    "test:command-reference": {
+      "command": "node --loader ts-node/esm --no-warnings=ExperimentalWarning \"./bin/dev.js\" commandreference:generate --erroronwarnings",
+      "files": [
+        "src/**/*.ts",
+        "messages/**",
+        "package.json"
+      ],
+      "output": [
+        "tmp/root"
+      ]
+    },
+    "test:deprecation-policy": {
+      "command": "node --loader ts-node/esm --no-warnings=ExperimentalWarning \"./bin/dev.js\" snapshot:compare",
+      "files": [
+        "src/**/*.ts"
+      ],
+      "output": [],
+      "dependencies": [
+        "compile"
+      ]
+    },
+    "test:json-schema": {
+      "command": "node --loader ts-node/esm --no-warnings=ExperimentalWarning \"./bin/dev.js\" schema:compare",
+      "files": [
+        "src/**/*.ts",
+        "schemas"
+      ],
+      "output": []
+    },
+    "test:compile": {
+      "command": "tsc -p \"./test\" --pretty",
+      "files": [
+        "test/**/*.ts",
+        "**/tsconfig.json"
+      ],
+      "output": []
+    },
+    "test:only": {
+      "command": "nyc mocha \"test/**/*.test.ts\"",
+      "env": {
+        "FORCE_COLOR": "2"
+      },
+      "files": [
+        "test/**/*.ts",
+        "src/**/*.ts",
+        "**/tsconfig.json",
+        ".mocha*",
+        "!*.nut.ts",
+        ".nycrc"
+      ],
+      "output": []
+    },
+    "link-check": {
+      "command": "node -e \"process.exit(process.env.CI ? 0 : 1)\" || linkinator \"**/*.md\" --skip \"CHANGELOG.md|node_modules|test/|confluence.internal.salesforce.com|my.salesforce.com|%s\" --markdown --retry --directory-listing --verbosity error",
+      "files": [
+        "./*.md",
+        "./!(CHANGELOG).md",
+        "messages/**/*.md"
+      ],
+      "output": []
+    }
+  },
+  "exports": "./lib/index.js",
+  "type": "module"
+}

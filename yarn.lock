@@ -1715,10 +1715,10 @@
     "@sigstore/protobuf-specs" "^0.2.0"
     tuf-js "^1.1.7"
 
-"@simplysf/dev-scripts@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@simplysf/dev-scripts/-/dev-scripts-2.0.0.tgz#d6659441873561674d929c9526b2e8271e8d788a"
-  integrity sha512-wXM4Nf1BhRhoyRtHIuFjsk1P4NdES43WQbe0bzQqX4bQGcJMFcjzNHcWF3k/fS0xAaYcWiQkSA+6O9J2zM5khg==
+"@simplysf/dev-scripts@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@simplysf/dev-scripts/-/dev-scripts-2.1.0.tgz#dcba19853830aabde2ce3d06bd3d5fdd838ffe5e"
+  integrity sha512-NjY3hqmQpkLbWJfQK3i5RyTRv5ZjIqon1BVLib2nMDDyZgyzPO7Q6edtE2aOh9woNIbl3kK9/ZHJ7v/MdmjmnA==
   dependencies:
     "@commitlint/cli" "^17.1.2"
     "@commitlint/config-conventional" "^17.8.1"
@@ -1732,6 +1732,7 @@
     chalk "^4.0.0"
     cosmiconfig "^7.1.0"
     eslint-config-salesforce-typescript "^3.2.11"
+    eslint-plugin-header "^3.1.1"
     husky "^7.0.4"
     linkinator "^6.0.4"
     mocha "^10.3.0"

@@ -1,6 +1,6 @@
 # @simplysf/simply-data
 
-[![NPM](https://img.shields.io/npm/v/@simplysf/simply-data?label=@simplysf/simply-data)](https://npmjs.com/data/@simplysf/simply-data) [![Downloads/week](https://img.shields.io/npm/dw/@simplysf/simply-data.svg)](https://npmjs.com/data/@simplysf/simply-data) [![License: BSD-3-Clause](https://img.shields.io/badge/License-BSD_3--Clause-yellow.svg)](https://raw.githubusercontent.com/SimplySF/simply-data/main/LICENSE.txt)
+[![NPM](https://img.shields.io/npm/v/@simplysf/simply-data?label=@simplysf/simply-data)](https://npmjs.com/@simplysf/simply-data) [![Downloads/week](https://img.shields.io/npm/dw/@simplysf/simply-data.svg)](https://npmjs.com/@simplysf/simply-data) [![License: BSD-3-Clause](https://img.shields.io/badge/License-BSD_3--Clause-yellow.svg)](https://raw.githubusercontent.com/SimplySF/simply-data/main/LICENSE.txt)
 
 ## Install
 
@@ -56,8 +56,9 @@ sf plugins
 ## Commands
 
 <!-- commands -->
-* [`sf simply data file upload`](#sf-simply-data-file-upload)
-* [`sf simply data files upload`](#sf-simply-data-files-upload)
+
+- [`sf simply data file upload`](#sf-simply-data-file-upload)
+- [`sf simply data files upload`](#sf-simply-data-files-upload)
 
 ## `sf simply data file upload`
 
@@ -135,4 +136,5 @@ FLAG DESCRIPTIONS
 ```
 
 _See code: [src/commands/simply/data/files/upload.ts](https://github.com/SimplySF/simply-data/blob/1.1.2/src/commands/simply/data/files/upload.ts)_
+
 <!-- commandsstop -->

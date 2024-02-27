@@ -1,3 +1,12 @@
+## [1.1.3](https://github.com/SimplySF/simply-data/compare/1.1.2...1.1.3) (2024-02-27)
+
+
+### Bug Fixes
+
+* incorrect readme links ([c23eaea](https://github.com/SimplySF/simply-data/commit/c23eaea935898034de6da19d010aec55b1544cd5))
+
+
+
 ## [1.1.2](https://github.com/SimplySF/simply-data/compare/1.1.1...1.1.2) (2024-02-26)
 
 

@@ -1,3 +1,12 @@
+## [1.1.5](https://github.com/SimplySF/simply-data/compare/1.1.4...1.1.5) (2024-02-28)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 3.19.6 to 3.20.0 ([2139b3e](https://github.com/SimplySF/simply-data/commit/2139b3ea9b2badb9f938ee594db37969ad8d3c16))
+
+
+
 ## [1.1.4](https://github.com/SimplySF/simply-data/compare/1.1.3...1.1.4) (2024-02-28)
 
 

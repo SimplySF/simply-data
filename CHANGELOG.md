@@ -1,3 +1,12 @@
+## [1.1.4](https://github.com/SimplySF/simply-data/compare/1.1.3...1.1.4) (2024-02-28)
+
+
+### Bug Fixes
+
+* **deps:** bump @salesforce/sf-plugins-core from 5.0.13 to 7.1.13 ([1b896c8](https://github.com/SimplySF/simply-data/commit/1b896c8b93ca48a00e439606c3dcf377a908dab2))
+
+
+
 ## [1.1.3](https://github.com/SimplySF/simply-data/compare/1.1.2...1.1.3) (2024-02-27)
 
 

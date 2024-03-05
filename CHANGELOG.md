@@ -1,3 +1,13 @@
+## [1.1.6](https://github.com/SimplySF/simply-data/compare/1.1.5...1.1.6) (2024-03-05)
+
+
+### Bug Fixes
+
+* **deps:** bump @salesforce/core from 6.5.6 to 6.7.0 ([d4e10ff](https://github.com/SimplySF/simply-data/commit/d4e10ffa4cd9b60bc9fc71c785812bfc8db51cf4))
+* **deps:** bump csv-parse from 5.5.3 to 5.5.5 ([5cd77b5](https://github.com/SimplySF/simply-data/commit/5cd77b5b9c047b92df4387bc09de223bc84277b7))
+
+
+
 ## [1.1.5](https://github.com/SimplySF/simply-data/compare/1.1.4...1.1.5) (2024-02-28)
 
 

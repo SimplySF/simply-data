@@ -1,7 +1,7 @@
 {
   "name": "@simplysf/simply-data",
   "description": "Utilities for working with data",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "author": "@ClayChipps",
   "bugs": "https://github.com/SimplySF/simply-data/issues",
   "dependencies": {
@@ -87,7 +87,7 @@
     "format": "wireit",
     "link-check": "wireit",
     "lint": "wireit",
-    "postpack": "sf-clean",
+    "postpack": "sf-clean --ignore-signing-artifacts",
     "prepack": "sf-prepack",
     "prepare": "sf-install",
     "test": "wireit",

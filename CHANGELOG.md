@@ -1,3 +1,12 @@
+## [1.1.9](https://github.com/SimplySF/simply-data/compare/1.1.8...1.1.9) (2024-03-19)
+
+
+### Bug Fixes
+
+* incorrect tagging logic ([f08bd33](https://github.com/SimplySF/simply-data/commit/f08bd3343e3a967c184085305ab62e0320f8cb30))
+
+
+
 ## [1.1.8](https://github.com/SimplySF/simply-data/compare/1.1.7...1.1.8) (2024-03-13)
 
 

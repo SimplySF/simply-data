@@ -57,6 +57,7 @@ sf plugins
 
 <!-- commands -->
 * [`sf simply data file upload`](#sf-simply-data-file-upload)
+* [`sf simply data files download`](#sf-simply-data-files-download)
 * [`sf simply data files upload`](#sf-simply-data-files-upload)
 
 ## `sf simply data file upload`
@@ -90,7 +91,51 @@ EXAMPLES
   $ sf simply data file upload --file-path fileToUpload.txt --first-publish-location-id 0019000000DmehK --target-org myTargetOrg
 ```
 
-_See code: [src/commands/simply/data/file/upload.ts](https://github.com/SimplySF/simply-data/blob/1.1.8/src/commands/simply/data/file/upload.ts)_
+_See code: [src/commands/simply/data/file/upload.ts](https://github.com/SimplySF/simply-data/blob/1.1.9-dev.0/src/commands/simply/data/file/upload.ts)_
+
+## `sf simply data files download`
+
+Download files from a Salesforce org.
+
+```
+USAGE
+  $ sf simply data files download -o <value> --where <value> [--json] [--api-version <value>] [--max-parallel-jobs
+  <value>]
+
+FLAGS
+  -o, --target-org=<value>         (required) Username or alias of the target org. Not required if the `target-org`
+                                   configuration variable is already set.
+      --api-version=<value>        Override the api version used for api requests made by this command
+      --max-parallel-jobs=<value>  [default: 1] Maximum number of parallel jobs.
+      --where=<value>              (required) WHERE clause for ContentVersion query.
+
+GLOBAL FLAGS
+  --json  Format output as json.
+
+DESCRIPTION
+  Download files from a Salesforce org.
+
+  Downloads files specified by a where clause to a ContentVersion query from a Salesforce org. By default, the plugin
+  uses the REST API for the download as to allow for the streaming of large files without issue. This means that each
+  file will use one REST API request.
+
+EXAMPLES
+  $ sf simply data files download --where 'IsLatest=true' --target-org myTargetOrg
+
+  $ sf simply data files download --where 'IsLatest=true' --max-parallel-jobs 5 --target-org myTargetOrg
+
+FLAG DESCRIPTIONS
+  --max-parallel-jobs=<value>  Maximum number of parallel jobs.
+
+    By default the plugin will only process a single file download at a time. You can increase this value to allow for
+    quasi concurrent downloads. Please note that setting this value too high can cause performance issues.
+
+  --where=<value>  WHERE clause for ContentVersion query.
+
+    Provide a WHERE clause to allow the plugin to specify which ContentVersion records should be downloaded.
+```
+
+_See code: [src/commands/simply/data/files/download.ts](https://github.com/SimplySF/simply-data/blob/1.1.9-dev.0/src/commands/simply/data/files/download.ts)_
 
 ## `sf simply data files upload`
 
@@ -134,5 +179,5 @@ FLAG DESCRIPTIONS
     quasi concurrent uploads. Please note that setting this value too high can cause performance issues.
 ```
 
-_See code: [src/commands/simply/data/files/upload.ts](https://github.com/SimplySF/simply-data/blob/1.1.8/src/commands/simply/data/files/upload.ts)_
+_See code: [src/commands/simply/data/files/upload.ts](https://github.com/SimplySF/simply-data/blob/1.1.9-dev.0/src/commands/simply/data/files/upload.ts)_
 <!-- commandsstop -->

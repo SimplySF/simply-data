@@ -91,7 +91,7 @@ EXAMPLES
   $ sf simply data file upload --file-path fileToUpload.txt --first-publish-location-id 0019000000DmehK --target-org myTargetOrg
 ```
 
-_See code: [src/commands/simply/data/file/upload.ts](https://github.com/SimplySF/simply-data/blob/1.1.9-dev.0/src/commands/simply/data/file/upload.ts)_
+_See code: [src/commands/simply/data/file/upload.ts](https://github.com/SimplySF/simply-data/blob/1.1.9-dev.1/src/commands/simply/data/file/upload.ts)_
 
 ## `sf simply data files download`
 
@@ -135,7 +135,7 @@ FLAG DESCRIPTIONS
     Provide a WHERE clause to allow the plugin to specify which ContentVersion records should be downloaded.
 ```
 
-_See code: [src/commands/simply/data/files/download.ts](https://github.com/SimplySF/simply-data/blob/1.1.9-dev.0/src/commands/simply/data/files/download.ts)_
+_See code: [src/commands/simply/data/files/download.ts](https://github.com/SimplySF/simply-data/blob/1.1.9-dev.1/src/commands/simply/data/files/download.ts)_
 
 ## `sf simply data files upload`
 
@@ -179,5 +179,5 @@ FLAG DESCRIPTIONS
     quasi concurrent uploads. Please note that setting this value too high can cause performance issues.
 ```
 
-_See code: [src/commands/simply/data/files/upload.ts](https://github.com/SimplySF/simply-data/blob/1.1.9-dev.0/src/commands/simply/data/files/upload.ts)_
+_See code: [src/commands/simply/data/files/upload.ts](https://github.com/SimplySF/simply-data/blob/1.1.9-dev.1/src/commands/simply/data/files/upload.ts)_
 <!-- commandsstop -->

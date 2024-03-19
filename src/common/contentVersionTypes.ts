@@ -6,9 +6,15 @@
  */
 
 export interface ContentVersion {
-  ContentDocumentId?: string;
+  ContentDocumentId: string;
+  ContentSize: string;
+  Description: string;
   FileExtension: string;
+  FileType: string;
+  FirstPublishLocationId: string;
   Id: string;
+  IsLatest: string;
+  PathOnClient: string;
   Title: string;
 }
 
@@ -24,6 +30,11 @@ export interface ContentVersionCreateResult {
   errors: string[];
   name: string;
   message: string;
+}
+
+export interface ContentVersionDownload extends ContentVersion {
+  Error?: string;
+  FilePath?: string;
 }
 
 export type ContentVersionToUpload = {

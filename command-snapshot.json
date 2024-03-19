@@ -9,6 +9,14 @@
   },
   {
     "alias": [],
+    "command": "simply:data:files:download",
+    "flagAliases": [],
+    "flagChars": ["o"],
+    "flags": ["api-version", "json", "max-parallel-jobs", "target-org", "where"],
+    "plugin": "@simplysf/simply-data"
+  },
+  {
+    "alias": [],
     "command": "simply:data:files:upload",
     "flagAliases": [],
     "flagChars": ["o"],

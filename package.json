@@ -6,7 +6,7 @@
   "bugs": "https://github.com/SimplySF/simply-data/issues",
   "dependencies": {
     "@oclif/core": "^3.25.0",
-    "@salesforce/core": "^6.7.0",
+    "@salesforce/core": "^6.7.3",
     "@salesforce/kit": "^3.0.15",
     "@salesforce/sf-plugins-core": "^7.1.14",
     "csv-parse": "^5.5.5",

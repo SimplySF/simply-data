@@ -23,6 +23,7 @@ export default class DataFilesUpload extends SfCommand<void> {
   public static readonly examples = messages.getMessages('examples');
 
   public static readonly flags = {
+    ...SfCommand.baseFlags,
     'api-version': Flags.orgApiVersion(),
     'file-path': Flags.directory({
       summary: messages.getMessage('flags.file-path.summary'),

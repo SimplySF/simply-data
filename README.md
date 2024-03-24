@@ -65,8 +65,8 @@ Upload a file to a Salesforce org.
 
 ```
 USAGE
-  $ sf simply data file upload --file-path <value> -o <value> [--json] [--api-version <value>] [--first-publish-location-id
-    <value>] [--title <value>]
+  $ sf simply data file upload --file-path <value> -o <value> [--json] [--flags-dir <value>] [--api-version <value>]
+    [--first-publish-location-id <value>] [--title <value>]
 
 FLAGS
   -o, --target-org=<value>                 (required) Username or alias of the target org. Not required if the
@@ -77,7 +77,8 @@ FLAGS
       --title=<value>                      Specify the title for the file being uploaded.
 
 GLOBAL FLAGS
-  --json  Format output as json.
+  --flags-dir=<value>  Import flag values from a directory.
+  --json               Format output as json.
 
 DESCRIPTION
   Upload a file to a Salesforce org.
@@ -90,7 +91,7 @@ EXAMPLES
   $ sf simply data file upload --file-path fileToUpload.txt --first-publish-location-id 0019000000DmehK --target-org myTargetOrg
 ```
 
-_See code: [src/commands/simply/data/file/upload.ts](https://github.com/SimplySF/simply-data/blob/1.1.9/src/commands/simply/data/file/upload.ts)_
+_See code: [src/commands/simply/data/file/upload.ts](https://github.com/SimplySF/simply-data/blob/1.2.0/src/commands/simply/data/file/upload.ts)_
 
 ## `sf simply data files upload`
 
@@ -98,8 +99,8 @@ Upload files to a Salesforce org.
 
 ```
 USAGE
-  $ sf simply data files upload --file-path <value> -o <value> [--json] [--api-version <value>] [--max-parallel-jobs
-  <value>]
+  $ sf simply data files upload --file-path <value> -o <value> [--json] [--flags-dir <value>] [--api-version <value>]
+    [--max-parallel-jobs <value>]
 
 FLAGS
   -o, --target-org=<value>         (required) Username or alias of the target org. Not required if the `target-org`
@@ -109,7 +110,8 @@ FLAGS
       --max-parallel-jobs=<value>  [default: 1] Maximum number of parallel jobs.
 
 GLOBAL FLAGS
-  --json  Format output as json.
+  --flags-dir=<value>  Import flag values from a directory.
+  --json               Format output as json.
 
 DESCRIPTION
   Upload files to a Salesforce org.
@@ -134,5 +136,5 @@ FLAG DESCRIPTIONS
     quasi concurrent uploads. Please note that setting this value too high can cause performance issues.
 ```
 
-_See code: [src/commands/simply/data/files/upload.ts](https://github.com/SimplySF/simply-data/blob/1.1.9/src/commands/simply/data/files/upload.ts)_
+_See code: [src/commands/simply/data/files/upload.ts](https://github.com/SimplySF/simply-data/blob/1.2.0/src/commands/simply/data/files/upload.ts)_
 <!-- commandsstop -->

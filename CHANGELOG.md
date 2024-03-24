@@ -1,3 +1,12 @@
+# [1.2.0](https://github.com/SimplySF/simply-data/compare/1.1.9...1.2.0) (2024-03-24)
+
+
+### Features
+
+* upgrade to sf-plugins-core 8 ([f932994](https://github.com/SimplySF/simply-data/commit/f9329944373d80cbdea0162a9868936e072e4667))
+
+
+
 ## [1.1.9](https://github.com/SimplySF/simply-data/compare/1.1.8...1.1.9) (2024-03-19)
 
 

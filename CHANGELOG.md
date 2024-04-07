@@ -1,3 +1,12 @@
+## [1.2.2](https://github.com/SimplySF/simply-data/compare/1.2.1...1.2.2) (2024-04-07)
+
+
+### Bug Fixes
+
+* **deps:** bump @salesforce/core from 6.7.3 to 6.7.6 ([e1007d6](https://github.com/SimplySF/simply-data/commit/e1007d6219e9f3d4940fc38231d60dfe0aeb5020))
+
+
+
 ## [1.2.1](https://github.com/SimplySF/simply-data/compare/1.2.0...1.2.1) (2024-04-03)
 
 

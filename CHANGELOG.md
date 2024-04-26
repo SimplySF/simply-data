@@ -1,3 +1,12 @@
+# [1.3.0](https://github.com/SimplySF/simply-data/compare/1.2.4...1.3.0) (2024-04-26)
+
+
+### Features
+
+* upgrade sf dependencies ([b723496](https://github.com/SimplySF/simply-data/commit/b723496bdc95e346dcf2d27cddcef6c97fe603c4))
+
+
+
 ## [1.2.4](https://github.com/SimplySF/simply-data/compare/1.2.3...1.2.4) (2024-04-25)
 
 

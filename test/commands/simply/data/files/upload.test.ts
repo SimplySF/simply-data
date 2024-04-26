@@ -10,7 +10,7 @@ import { expect } from 'chai';
 import { parse } from 'csv-parse/sync';
 import got from 'got';
 import { Connection, SfError } from '@salesforce/core';
-import { MockTestOrgData, TestContext } from '@salesforce/core/lib/testSetup.js';
+import { MockTestOrgData, TestContext } from '@salesforce/core/testSetup';
 import DataFilesUpload from '../../../../../src/commands/simply/data/files/upload.js';
 import { ContentVersionToUpload } from '../../../../../src/common/contentVersionTypes.js';
 

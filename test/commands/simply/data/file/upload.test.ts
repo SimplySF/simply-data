@@ -8,7 +8,7 @@
 import { expect } from 'chai';
 import got from 'got';
 import { Connection, SfError } from '@salesforce/core';
-import { MockTestOrgData, TestContext } from '@salesforce/core/lib/testSetup.js';
+import { MockTestOrgData, TestContext } from '@salesforce/core/testSetup';
 import DataFileUpload from '../../../../../src/commands/simply/data/file/upload.js';
 
 describe('simply data file upload', () => {

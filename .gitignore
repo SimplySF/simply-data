@@ -12,6 +12,9 @@ npm-shrinkwrap.json
 *-error.log
 *-debug.log
 
+# history extension
+.history
+
 # compile source
 lib
 dist

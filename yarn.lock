@@ -1739,27 +1739,27 @@
   dependencies:
     tslib "^2.6.2"
 
-"@simplysf/dev-scripts@^2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@simplysf/dev-scripts/-/dev-scripts-2.1.2.tgz#944e51f98f0e6e037ecb544a220af69a39060753"
-  integrity sha512-30Y3jozWOqYOMqCom+BC3LuXaQU3JGIcxJU2DCj6YNh4E4uQt5ZDWrG6pdbQlsntrWlJm2+w7WuwH/KbYvqqxQ==
+"@simplysf/dev-scripts@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@simplysf/dev-scripts/-/dev-scripts-3.0.0.tgz#a2bcd9c483bee7dd311873876f47b66972278af5"
+  integrity sha512-XtJtXbLEJeCSnxuGMhYKNF7Gyktemrkenn8KtPl/0qFwV7f0xAsL+mfQJs6esSlUqKlqIuD9IPBim4rOe8cyag==
   dependencies:
     "@commitlint/cli" "^17.1.2"
     "@commitlint/config-conventional" "^17.8.1"
     "@salesforce/dev-config" "^4.1.0"
     "@salesforce/prettier-config" "^0.0.3"
-    "@types/chai" "^4.3.11"
+    "@types/chai" "^4.3.14"
     "@types/mocha" "^10.0.6"
-    "@types/node" "^18"
+    "@types/node" "^18.19.28"
     "@types/sinon" "^10.0.20"
     chai "^4.4.1"
     chalk "^4.0.0"
-    cosmiconfig "^7.1.0"
-    eslint-config-salesforce-typescript "^3.2.11"
+    cosmiconfig "^8.3.6"
+    eslint-config-salesforce-typescript "^3.3.0"
     eslint-plugin-header "^3.1.1"
     husky "^7.0.4"
     linkinator "^6.0.4"
-    mocha "^10.3.0"
+    mocha "^10.4.0"
     nyc "^15.1.0"
     prettier "^2.8.8"
     pretty-quick "^3.3.1"
@@ -1767,9 +1767,9 @@
     sinon "10.0.0"
     source-map-support "^0.5.21"
     ts-node "^10.9.2"
-    typedoc "^0.25.8"
+    typedoc "^0.25.12"
     typedoc-plugin-missing-exports "0.23.0"
-    typescript "^4.9.5"
+    typescript "^5.4.3"
     wireit "^0.14.4"
 
 "@sindresorhus/is@^4":
@@ -2459,10 +2459,10 @@
   resolved "https://registry.yarnpkg.com/@tsconfig/node16/-/node16-1.0.4.tgz#0b92dcc0cc1c81f6f306a381f28e31b1a56536e9"
   integrity sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==
 
-"@types/chai@^4.3.11":
-  version "4.3.11"
-  resolved "https://registry.yarnpkg.com/@types/chai/-/chai-4.3.11.tgz#e95050bf79a932cb7305dd130254ccdf9bde671c"
-  integrity sha512-qQR1dr2rGIHYlJulmr8Ioq3De0Le9E4MJ5AiaeAETJJpndT1uUNHsGFK3L/UIu+rbkQSdj8J/w2bCsBZc/Y5fQ==
+"@types/chai@^4.3.14":
+  version "4.3.15"
+  resolved "https://registry.yarnpkg.com/@types/chai/-/chai-4.3.15.tgz#7c041cce5fad1eab62be9014a327d4841a1cff5e"
+  integrity sha512-PYVSvyeZqy9++MoSegq88PxoPndWDDLGbJmE/OZnzUk3D4cCRTmA4N6EX3g0GgLVA+vtys7bj4luhkVCglGTkQ==
 
 "@types/cli-progress@^3.11.5":
   version "3.11.5"
@@ -2528,10 +2528,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/node@*", "@types/node@^20.10.7":
-  version "20.11.20"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.11.20.tgz#f0a2aee575215149a62784210ad88b3a34843659"
-  integrity sha512-7/rR21OS+fq8IyHTgtLkDK949uzsa6n8BkziAKtPVpugIkO6D+/ooXMvzXxDnZrmtXVfjb1bKQafYpb8s89LOg==
+"@types/node@*", "@types/node@^20.10.7", "@types/node@^20.11.30", "@types/node@^20.12.7":
+  version "20.12.7"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.12.7.tgz#04080362fa3dd6c5822061aa3124f5c152cff384"
+  integrity sha512-wq0cICSkRLVaf3UGLMGItu/PtdY7oaXaI/RVU+xliKVOtRna3PRY57ZDfztpDL0n11vfymMUnXv8QwYCO7L1wg==
   dependencies:
     undici-types "~5.26.4"
 
@@ -2540,31 +2540,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.5.1.tgz#178d58ee7e4834152b0e8b4d30cbfab578b9bb30"
   integrity sha512-4tT2UrL5LBqDwoed9wZ6N3umC4Yhz3W3FloMmiiG4JwmUJWpie0c7lcnUNd4gtMKuDEO4wRVS8B6Xa0uMRsMKg==
 
-"@types/node@^18":
-  version "18.19.6"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.19.6.tgz#537beece2c8ad4d9abdaa3b0f428e601eb57dac8"
-  integrity sha512-X36s5CXMrrJOs2lQCdDF68apW4Rfx9ixYMawlepwmE4Anezv/AV2LSpKD1Ub8DAc+urp5bk0BGZ6NtmBitfnsg==
-  dependencies:
-    undici-types "~5.26.4"
-
-"@types/node@^18.15.3":
+"@types/node@^18.15.3", "@types/node@^18.19.28":
   version "18.19.31"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.19.31.tgz#b7d4a00f7cb826b60a543cebdbda5d189aaecdcd"
   integrity sha512-ArgCD39YpyyrtFKIqMDvjz79jto5fcI/SVUs2HwB+f0dAzq68yqOdyaSivLiLugSziTpNXLQrVb7RZFmdZzbhA==
-  dependencies:
-    undici-types "~5.26.4"
-
-"@types/node@^20.11.30":
-  version "20.12.3"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.12.3.tgz#d6658c2c7776c1cad93534bb45428195ed840c65"
-  integrity sha512-sD+ia2ubTeWrOu+YMF+MTAB7E+O7qsMqAbMfW7DG3K1URwhZ5hN1pLlRVGbf4wDFzSfikL05M17EyorS86jShw==
-  dependencies:
-    undici-types "~5.26.4"
-
-"@types/node@^20.12.7":
-  version "20.12.7"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.12.7.tgz#04080362fa3dd6c5822061aa3124f5c152cff384"
-  integrity sha512-wq0cICSkRLVaf3UGLMGItu/PtdY7oaXaI/RVU+xliKVOtRna3PRY57ZDfztpDL0n11vfymMUnXv8QwYCO7L1wg==
   dependencies:
     undici-types "~5.26.4"
 
@@ -2572,11 +2551,6 @@
   version "2.4.4"
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.4.tgz#56e2cc26c397c038fab0e3a917a12d5c5909e901"
   integrity sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==
-
-"@types/parse-json@^4.0.0":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.2.tgz#5950e50960793055845e956c427fc2b0d70c5239"
-  integrity sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw==
 
 "@types/semver@^7.5.0":
   version "7.5.8"
@@ -3465,18 +3439,7 @@ cosmiconfig-typescript-loader@^4.0.0:
   resolved "https://registry.yarnpkg.com/cosmiconfig-typescript-loader/-/cosmiconfig-typescript-loader-4.4.0.tgz#f3feae459ea090f131df5474ce4b1222912319f9"
   integrity sha512-BabizFdC3wBHhbI4kJh0VkQP9GkBfoHPydD0COMce1nJ1kJAB3F2TmJ/I7diULBKtmEWSwEbuN/KDtgnmUUVmw==
 
-cosmiconfig@^7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-7.1.0.tgz#1443b9afa596b670082ea46cbd8f6a62b84635f6"
-  integrity sha512-AdmX6xUzdNASswsFtmwSt7Vj8po9IuqXm0UXz7QKPuEUmPB4XyjGfaAr2PSuELMwkRMVH1EpIkX5bTZGRB3eCA==
-  dependencies:
-    "@types/parse-json" "^4.0.0"
-    import-fresh "^3.2.1"
-    parse-json "^5.0.0"
-    path-type "^4.0.0"
-    yaml "^1.10.0"
-
-cosmiconfig@^8.0.0:
+cosmiconfig@^8.0.0, cosmiconfig@^8.3.6:
   version "8.3.6"
   resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-8.3.6.tgz#060a2b871d66dba6c8538ea1118ba1ac16f5fae3"
   integrity sha512-kcZ6+W5QzcJ3P1Mt+83OUv/oHFqZHIx8DuxG6eZ5RGMERoLqp4BuGjhHLYGK+Kf5XVkQvqBSmAy/nGWN3qDgEA==
@@ -3872,26 +3835,26 @@ eslint-config-salesforce-license@^0.2.0:
   resolved "https://registry.yarnpkg.com/eslint-config-salesforce-license/-/eslint-config-salesforce-license-0.2.0.tgz#323193f1aa15dd33fbf108d25fc1210afc11065e"
   integrity sha512-DJdBvgj82Erum82YMe+YvG/o6ukna3UA++lRl0HSTldj0VlBl3Q8hzCp97nRXZHra6JH1I912yievZzklXDw6w==
 
-eslint-config-salesforce-typescript@^3.2.11:
-  version "3.2.11"
-  resolved "https://registry.yarnpkg.com/eslint-config-salesforce-typescript/-/eslint-config-salesforce-typescript-3.2.11.tgz#905102212d1a1e6752fbbfd805256e5e3173c102"
-  integrity sha512-joZX/tMJXn9U48KAEUEeoIlhFLwr8vSA+mazZLzyZ6vO6bA0LUz1t6gJLH+wjKkrhayNUGOG5aBI2ODmhFnk7w==
+eslint-config-salesforce-typescript@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-salesforce-typescript/-/eslint-config-salesforce-typescript-3.3.0.tgz#308acead1909665a92e9d32895c592ec4c9ee87a"
+  integrity sha512-83+zp2Y2h9oz9D3UksjNGCw+xWD7ylIiAJZ58vUbBD10l8FRUMNyn+RDCKn0xCQz7xed5/LcmgUE4T7roe+HBw==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^6.21.0"
     "@typescript-eslint/parser" "^6.21.0"
     eslint "^8.56.0"
     eslint-config-prettier "^9.1.0"
-    eslint-config-salesforce "^2.0.2"
+    eslint-config-salesforce "^2.2.0"
     eslint-config-salesforce-license "^0.2.0"
     eslint-plugin-header "^3.1.1"
     eslint-plugin-import "^2.29.1"
     eslint-plugin-jsdoc "^46.10.1"
     eslint-plugin-unicorn "^50.0.1"
 
-eslint-config-salesforce@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/eslint-config-salesforce/-/eslint-config-salesforce-2.0.2.tgz#38eb2d8eb2824c66967ed9b45bc92082eba2f225"
-  integrity sha512-3jbrI+QFu/KaQbPYIBxItB3okqUtA4EBCGiR6s2kcUMIZBLBBGAURW0k62f9WAv1EagR3eUoO0m9ru7LTj2F5Q==
+eslint-config-salesforce@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-salesforce/-/eslint-config-salesforce-2.2.0.tgz#04b6cf07dcbaabc32fc9edb0915860497db55c30"
+  integrity sha512-0zUEFJ2nNpMvVO3MgKEDUTGtaFZjL3xEIErr5h+BOft+OhGoIvZBNPnBBu12lvv29ylqIAQz5SwoVCCUzBhyPQ==
 
 eslint-import-resolver-node@^0.3.9:
   version "0.3.9"
@@ -5773,10 +5736,10 @@ minimist@^1.2.0, minimist@^1.2.5, minimist@^1.2.6:
   resolved "https://registry.yarnpkg.com/minipass/-/minipass-7.0.4.tgz#dbce03740f50a4786ba994c1fb908844d27b038c"
   integrity sha512-jYofLM5Dam9279rdkWzqHozUo4ybjdZmCsDHePy5V/PbBcVMiSZR97gmAy45aqi8CK1lG2ECd356FU86avfwUQ==
 
-mocha@^10.3.0:
-  version "10.3.0"
-  resolved "https://registry.yarnpkg.com/mocha/-/mocha-10.3.0.tgz#0e185c49e6dccf582035c05fa91084a4ff6e3fe9"
-  integrity sha512-uF2XJs+7xSLsrmIvn37i/wnc91nw7XjOQB8ccyx5aEgdnohr7n+rEiZP23WkCYHjilR6+EboEnbq/ZQDz4LSbg==
+mocha@^10.4.0:
+  version "10.4.0"
+  resolved "https://registry.yarnpkg.com/mocha/-/mocha-10.4.0.tgz#ed03db96ee9cfc6d20c56f8e2af07b961dbae261"
+  integrity sha512-eqhGB8JKapEYcC4ytX/xrzKforgEc3j1pGlAXVy3eRwrtAy5/nIfT1SvgGzfN0XZZxeLq0aQWkOUAmqIJiv+bA==
   dependencies:
     ansi-colors "4.1.1"
     browser-stdout "1.3.1"
@@ -7405,27 +7368,17 @@ typedoc-plugin-missing-exports@0.23.0:
   resolved "https://registry.yarnpkg.com/typedoc-plugin-missing-exports/-/typedoc-plugin-missing-exports-0.23.0.tgz#076df6ffce4d84e8097be009b7c62a17d58477a5"
   integrity sha512-9smahDSsFRno9ZwoEshQDuIYMHWGB1E6LUud5qMxR2wNZ0T4DlZz0QjoK3HzXtX34mUpTH0dYtt7NQUK4D6B6Q==
 
-typedoc@^0.25.8:
-  version "0.25.8"
-  resolved "https://registry.yarnpkg.com/typedoc/-/typedoc-0.25.8.tgz#7d0e1bf12d23bf1c459fd4893c82cb855911ff12"
-  integrity sha512-mh8oLW66nwmeB9uTa0Bdcjfis+48bAjSH3uqdzSuSawfduROQLlXw//WSNZLYDdhmMVB7YcYZicq6e8T0d271A==
+typedoc@^0.25.12:
+  version "0.25.13"
+  resolved "https://registry.yarnpkg.com/typedoc/-/typedoc-0.25.13.tgz#9a98819e3b2d155a6d78589b46fa4c03768f0922"
+  integrity sha512-pQqiwiJ+Z4pigfOnnysObszLiU3mVLWAExSPf+Mu06G/qsc3wzbuM56SZQvONhHLncLUhYzOVkjFFpFfL5AzhQ==
   dependencies:
     lunr "^2.3.9"
     marked "^4.3.0"
     minimatch "^9.0.3"
     shiki "^0.14.7"
 
-"typescript@^4.6.4 || ^5.2.2":
-  version "5.4.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.4.3.tgz#5c6fedd4c87bee01cd7a528a30145521f8e0feff"
-  integrity sha512-KrPd3PKaCLr78MalgiwJnA25Nm8HAmdwN3mYUYZgG/wizIo9EainNVQI9/yDavtVFRN2h3k8uf3GLHuhDMgEHg==
-
-typescript@^4.9.5:
-  version "4.9.5"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.5.tgz#095979f9bcc0d09da324d58d03ce8f8374cbe65a"
-  integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
-
-typescript@^5.4.5, typescript@~5.4.2:
+"typescript@^4.6.4 || ^5.2.2", typescript@^5.4.3, typescript@^5.4.5, typescript@~5.4.2:
   version "5.4.5"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.4.5.tgz#42ccef2c571fdbd0f6718b1d1f5e6e5ef006f611"
   integrity sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==
@@ -7729,11 +7682,6 @@ yallist@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-4.0.0.tgz#9bb92790d9c0effec63be73519e11a35019a3a72"
   integrity sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
-
-yaml@^1.10.0:
-  version "1.10.2"
-  resolved "https://registry.yarnpkg.com/yaml/-/yaml-1.10.2.tgz#2301c5ffbf12b467de8da2333a459e29e7920e4b"
-  integrity sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==
 
 yargs-parser@20.2.4:
   version "20.2.4"

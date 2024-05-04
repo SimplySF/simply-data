@@ -1,7 +1,7 @@
 {
   "name": "@simplysf/simply-data",
   "description": "Utilities for working with data",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "author": "@ClayChipps",
   "bugs": "https://github.com/SimplySF/simply-data/issues",
   "dependencies": {

@@ -1,3 +1,12 @@
+# [1.5.0](https://github.com/SimplySF/simply-data/compare/1.4.0...1.5.0) (2024-05-05)
+
+
+### Features
+
+* fix incorrect deps ([98915e6](https://github.com/SimplySF/simply-data/commit/98915e6b7b82e711c71841d07a66cda19e36de6c))
+
+
+
 # [1.4.0](https://github.com/SimplySF/simply-data/compare/1.3.1...1.4.0) (2024-05-05)
 
 

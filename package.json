@@ -21,11 +21,9 @@
     "@salesforce/plugin-command-reference": "^3.0.82",
     "@salesforce/ts-sinon": "1.4.19",
     "@simplysf/dev-scripts": "^3.0.0",
-    "@types/shelljs": "^0.8.15",
     "eslint-plugin-sf-plugin": "^1.18.2",
     "nock": "^13.5.4",
     "oclif": "^4.10.1",
-    "shelljs": "^0.8.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
   },

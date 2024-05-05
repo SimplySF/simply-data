@@ -7,10 +7,37 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import stream from 'node:stream';
 import FormData from 'form-data';
 import got from 'got';
 import { Connection } from '@salesforce/core';
-import { ContentVersionCreateRequest, ContentVersion, ContentVersionCreateResult } from './contentVersionTypes.js';
+import {
+  ContentVersion,
+  ContentVersionDownload,
+  ContentVersionCreateRequest,
+  ContentVersionCreateResult,
+} from './contentVersionTypes.js';
+
+export async function downloadContentVersion(
+  targetOrgConnection: Connection,
+  contentVersionDownload: ContentVersionDownload,
+  downloadDirectory: string
+): Promise<string> {
+  const filePath = `${downloadDirectory}/${
+    contentVersionDownload.ContentDocumentId
+  }_${contentVersionDownload.Title.replaceAll(' ', '_')}.${contentVersionDownload.FileExtension}`;
+
+  await stream.promises.pipeline(
+    got.stream(`${targetOrgConnection.baseUrl()}/sobjects/ContentVersion/${contentVersionDownload.Id}/VersionData`, {
+      headers: {
+        Authorization: `Bearer ${targetOrgConnection.accessToken}`,
+      },
+    }),
+    fs.createWriteStream(filePath)
+  );
+
+  return filePath;
+}
 
 export async function uploadContentVersion(
   targetOrgConnection: Connection,

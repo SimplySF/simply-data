@@ -54,8 +54,11 @@ describe('simply data files upload', () => {
       testOrg.username,
     ]);
 
-    const errorResults = parse(fs.readFileSync('error.csv'), { bom: true, columns: true }) as ContentVersionToUpload[];
-    const successResults = parse(fs.readFileSync('success.csv'), {
+    const errorResults = parse(fs.readFileSync('upload/error.csv'), {
+      bom: true,
+      columns: true,
+    }) as ContentVersionToUpload[];
+    const successResults = parse(fs.readFileSync('upload/success.csv'), {
       bom: true,
       columns: true,
     }) as ContentVersionToUpload[];

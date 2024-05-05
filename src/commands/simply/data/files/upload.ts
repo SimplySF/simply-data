@@ -50,8 +50,12 @@ export default class DataFilesUpload extends SfCommand<void> {
 
     this.spinner.start('Initializing file upload', '\n', { stdout: true });
 
+    if (!fs.existsSync('upload')) {
+      fs.mkdirSync('upload');
+    }
+
     const successWriter = createObjectCsvWriter({
-      path: 'success.csv',
+      path: 'upload/success.csv',
       header: [
         { id: 'PathOnClient', title: 'PathOnClient' },
         { id: 'Title', title: 'Title' },
@@ -61,7 +65,7 @@ export default class DataFilesUpload extends SfCommand<void> {
     });
 
     const errorWriter = createObjectCsvWriter({
-      path: 'error.csv',
+      path: 'upload/error.csv',
       header: [
         { id: 'PathOnClient', title: 'PathOnClient' },
         { id: 'Title', title: 'Title' },

@@ -5,26 +5,37 @@
  * For full license text, see LICENSE.txt file in the repo root or https://opensource.org/licenses/BSD-3-Clause
  */
 
-export interface ContentVersion {
-  ContentDocumentId?: string;
+export type ContentVersion = {
+  ContentDocumentId: string;
+  ContentSize: string;
+  Description: string;
   FileExtension: string;
+  FileType: string;
+  FirstPublishLocationId: string;
   Id: string;
+  IsLatest: string;
+  PathOnClient: string;
   Title: string;
-}
+};
 
-export interface ContentVersionCreateRequest {
+export type ContentVersionCreateRequest = {
   FirstPublishLocationId?: string;
   PathOnClient: string;
   Title?: string;
-}
+};
 
-export interface ContentVersionCreateResult {
+export type ContentVersionCreateResult = {
   id: string;
   success: boolean;
   errors: string[];
   name: string;
   message: string;
-}
+};
+
+export type ContentVersionDownload = ContentVersion & {
+  Error?: string;
+  FilePath?: string;
+};
 
 export type ContentVersionToUpload = {
   ContentDocumentId?: string;

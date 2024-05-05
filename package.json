@@ -5,7 +5,6 @@
   "author": "@ClayChipps",
   "bugs": "https://github.com/SimplySF/simply-data/issues",
   "dependencies": {
-    "@jsforce/jsforce-node": "^3.2.0",
     "@oclif/core": "^3.26.4",
     "@salesforce/core": "^7.3.3",
     "@salesforce/kit": "^3.1.1",
@@ -14,7 +13,6 @@
     "csv-writer": "^1.6.0",
     "form-data": "^4.0.0",
     "got": "13.0.0",
-    "nock": "^13.5.4",
     "p-queue": "^8.0.1"
   },
   "devDependencies": {
@@ -25,6 +23,7 @@
     "@simplysf/dev-scripts": "^3.0.0",
     "@types/shelljs": "^0.8.15",
     "eslint-plugin-sf-plugin": "^1.18.2",
+    "nock": "^13.5.4",
     "oclif": "^4.10.1",
     "shelljs": "^0.8.5",
     "ts-node": "^10.9.2",

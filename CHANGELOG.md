@@ -1,3 +1,12 @@
+# [1.4.0](https://github.com/SimplySF/simply-data/compare/1.3.1...1.4.0) (2024-05-05)
+
+
+### Features
+
+* add download files ([96b84cc](https://github.com/SimplySF/simply-data/commit/96b84cc7e291d186372c07ab98b932ae985c48cd))
+
+
+
 ## [1.3.1](https://github.com/SimplySF/simply-data/compare/1.3.0...1.3.1) (2024-05-04)
 
 

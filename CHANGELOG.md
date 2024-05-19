@@ -1,3 +1,12 @@
+# [1.6.0](https://github.com/SimplySF/simply-data/compare/1.5.0...1.6.0) (2024-05-19)
+
+
+### Features
+
+* bump deps ([e0223d4](https://github.com/SimplySF/simply-data/commit/e0223d447af107661973ae63aead2e8e0e2e43b5))
+
+
+
 # [1.5.0](https://github.com/SimplySF/simply-data/compare/1.4.0...1.5.0) (2024-05-05)
 
 

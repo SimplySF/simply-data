@@ -1,3 +1,12 @@
+## [1.6.1](https://github.com/SimplySF/simply-data/compare/1.6.0...1.6.1) (2024-06-03)
+
+
+### Bug Fixes
+
+* **deps:** bump @salesforce/kit from 3.1.1 to 3.1.2 ([609aa41](https://github.com/SimplySF/simply-data/commit/609aa41044f8ce63e8e3ee9ad98a160a62c4a619))
+
+
+
 # [1.6.0](https://github.com/SimplySF/simply-data/compare/1.5.0...1.6.0) (2024-05-19)
 
 

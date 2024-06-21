@@ -1,3 +1,12 @@
+## [1.6.2](https://github.com/SimplySF/simply-data/compare/1.6.1...1.6.2) (2024-06-21)
+
+
+### Bug Fixes
+
+* **deps:** bump braces from 3.0.2 to 3.0.3 ([7d3f5c3](https://github.com/SimplySF/simply-data/commit/7d3f5c311c4b89731d2229ff9953c008d21c968f))
+
+
+
 ## [1.6.1](https://github.com/SimplySF/simply-data/compare/1.6.0...1.6.1) (2024-06-03)
 
 

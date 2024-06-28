@@ -5,10 +5,10 @@
   "author": "@ClayChipps",
   "bugs": "https://github.com/SimplySF/simply-data/issues",
   "dependencies": {
-    "@oclif/core": "^3.26.6",
-    "@salesforce/core": "^7.3.8",
-    "@salesforce/kit": "^3.1.2",
-    "@salesforce/sf-plugins-core": "^9.0.10",
+    "@oclif/core": "^4",
+    "@salesforce/core": "^8.0.1",
+    "@salesforce/kit": "^3.1.6",
+    "@salesforce/sf-plugins-core": "^11.1.1",
     "csv-parse": "^5.5.6",
     "csv-writer": "^1.6.0",
     "form-data": "^4.0.0",
@@ -16,11 +16,11 @@
     "p-queue": "^8.0.1"
   },
   "devDependencies": {
-    "@oclif/plugin-command-snapshot": "^5.2.2",
+    "@oclif/plugin-command-snapshot": "^5.2.3",
     "@salesforce/cli-plugins-testkit": "^5.3.15",
     "@salesforce/plugin-command-reference": "^3.1.5",
     "@salesforce/ts-sinon": "1.4.19",
-    "@simplysf/dev-scripts": "^3.1.0",
+    "@simplysf/dev-scripts": "^3.3.0",
     "eslint-plugin-sf-plugin": "^1.18.9",
     "nock": "^13.5.4",
     "oclif": "^4.13.8",

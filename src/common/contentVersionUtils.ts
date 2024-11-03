@@ -30,7 +30,7 @@ export async function downloadContentVersion(
   await stream.promises.pipeline(
     got.stream(`${targetOrgConnection.baseUrl()}/sobjects/ContentVersion/${contentVersionDownload.Id}/VersionData`, {
       headers: {
-        Authorization: `Bearer ${targetOrgConnection.accessToken}`,
+        Authorization: `Bearer ${targetOrgConnection.accessToken as string}`,
       },
     }),
     fs.createWriteStream(filePath)
@@ -61,7 +61,7 @@ export async function uploadContentVersion(
   const data: ContentVersionCreateResult = await got.post(`${targetOrgConnection.baseUrl()}/sobjects/ContentVersion`, {
     body: form,
     headers: {
-      Authorization: `Bearer ${targetOrgConnection.accessToken}`,
+      Authorization: `Bearer ${targetOrgConnection.accessToken as string}`,
       'Content-Type': `multipart/form-data; boundary="${form.getBoundary()}"`,
     },
     resolveBodyOnly: true,

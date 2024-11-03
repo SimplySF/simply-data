@@ -1,3 +1,12 @@
+# [1.8.0](https://github.com/SimplySF/simply-data/compare/1.7.0...1.8.0) (2024-11-03)
+
+
+### Features
+
+* bump dependencies ([7933238](https://github.com/SimplySF/simply-data/commit/7933238674e31eb993949efbef9eed5ac295845d))
+
+
+
 # [1.7.0](https://github.com/SimplySF/simply-data/compare/1.6.2...1.7.0) (2024-06-28)
 
 

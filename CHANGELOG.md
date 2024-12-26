@@ -1,3 +1,12 @@
+# [1.9.0](https://github.com/SimplySF/simply-data/compare/1.8.0...1.9.0) (2024-12-26)
+
+
+### Features
+
+* fix issue in nuts ([a40140c](https://github.com/SimplySF/simply-data/commit/a40140cda5af9678ac3c257e3f6ec07a0ab81c28))
+
+
+
 # [1.8.0](https://github.com/SimplySF/simply-data/compare/1.7.0...1.8.0) (2024-11-03)
 
 

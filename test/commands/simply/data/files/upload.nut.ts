@@ -33,7 +33,7 @@ describe('simply data files upload', () => {
 
   it('should upload content versions', () => {
     const username = [...session.orgs.keys()][0];
-    const command = `simply data files upload --file-path docs/simply.data.files.upload.csv --target-org ${username}`;
+    const command = `simply data files upload --file-path docs/chipps.data.files.upload.csv --target-org ${username}`;
     execCmd(command, { ensureExitCode: 0, timeout: Duration.minutes(30).milliseconds });
   });
 });

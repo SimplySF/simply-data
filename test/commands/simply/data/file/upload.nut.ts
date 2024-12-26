@@ -11,7 +11,7 @@ import { execCmd, TestSession } from '@salesforce/cli-plugins-testkit';
 import { Duration } from '@salesforce/kit';
 import { ContentVersion } from '../../../../../src/common/contentVersionTypes.js';
 
-describe('chipps data files upload', () => {
+describe('simply data file upload', () => {
   let session: TestSession;
 
   before(async () => {
@@ -35,7 +35,7 @@ describe('chipps data files upload', () => {
 
   it('should upload content version', () => {
     const username = [...session.orgs.keys()][0];
-    const command = `chipps data file upload --file-path docs/upload_icon.png --target-org ${username}`;
+    const command = `simply data file upload --file-path docs/upload_icon.png --target-org ${username}`;
     const output = execCmd<ContentVersion>(command, {
       ensureExitCode: 0,
       timeout: Duration.minutes(30).milliseconds,

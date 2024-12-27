@@ -18,7 +18,7 @@ describe('simply data file upload', () => {
     session = await TestSession.create({
       devhubAuthStrategy: 'AUTO',
       project: {
-        gitClone: 'https://github.com/ClayChipps/easy-spaces-lwc',
+        gitClone: 'https://github.com/SimplySF/easy-spaces-lwc',
       },
       scratchOrgs: [
         {

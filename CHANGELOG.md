@@ -1,3 +1,12 @@
+## [1.9.1](https://github.com/SimplySF/simply-data/compare/1.9.0...1.9.1) (2024-12-27)
+
+
+### Bug Fixes
+
+* update to use simply easy spaces for tests ([64dea95](https://github.com/SimplySF/simply-data/commit/64dea953b3de62246bb3b2e4ce7648462d72d938))
+
+
+
 # [1.9.0](https://github.com/SimplySF/simply-data/compare/1.8.0...1.9.0) (2024-12-26)
 
 

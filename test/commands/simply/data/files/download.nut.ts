@@ -15,7 +15,7 @@ describe('simply data files download', () => {
     session = await TestSession.create({
       devhubAuthStrategy: 'AUTO',
       project: {
-        gitClone: 'https://github.com/SimplySF/easy-spaces-lwc',
+        sourceDir: path.join(process.cwd(), 'test/reference-project'),
       },
       scratchOrgs: [
         {

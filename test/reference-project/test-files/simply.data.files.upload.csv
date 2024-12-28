@@ -1,0 +1,4 @@
+Title,PathOnClient
+"Basic Text File",test/reference-project/test-files/basicTextFile.txt
+"Watch Doges",test/reference-project/test-files/watchDoge.jpg
+"Big Bogus File",test/reference-project/test-files/bogusFile.txt

@@ -49,7 +49,7 @@ describe('simply data files upload', () => {
 
     await DataFilesUpload.run([
       '--file-path',
-      './test/test-files/simply.data.files.upload.csv',
+      './test/reference-project/test-files/simply.data.files.upload.csv',
       '--target-org',
       testOrg.username,
     ]);
@@ -68,13 +68,13 @@ describe('simply data files upload', () => {
       {
         ContentDocumentId: '123',
         FirstPublishLocationId: '',
-        PathOnClient: 'test/test-files/basicTextFile.txt',
+        PathOnClient: 'test/reference-project/test-files/basicTextFile.txt',
         Title: 'Basic Text File',
       },
       {
         ContentDocumentId: '123',
         FirstPublishLocationId: '',
-        PathOnClient: 'test/test-files/watchDoge.jpg',
+        PathOnClient: 'test/reference-project/test-files/watchDoge.jpg',
         Title: 'Watch Doges',
       },
     ]);

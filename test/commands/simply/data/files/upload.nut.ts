@@ -16,7 +16,7 @@ describe('simply data files upload', () => {
     session = await TestSession.create({
       devhubAuthStrategy: 'AUTO',
       project: {
-        gitClone: 'https://github.com/SimplySF/easy-spaces-lwc',
+        sourceDir: path.join(process.cwd(), 'test/reference-project'),
       },
       scratchOrgs: [
         {
@@ -27,13 +27,13 @@ describe('simply data files upload', () => {
     });
   });
 
-  after(async () => {
-    await session?.clean();
-  });
-
   it('should upload content versions', () => {
     const username = [...session.orgs.keys()][0];
-    const command = `simply data files upload --file-path docs/simply.data.files.upload.csv --target-org ${username}`;
+    const command = `simply data files upload --file-path test-files/simply.data.files.upload.csv --target-org ${username}`;
     execCmd(command, { ensureExitCode: 0, timeout: Duration.minutes(30).milliseconds });
+  });
+
+  after(async () => {
+    await session?.clean();
   });
 });

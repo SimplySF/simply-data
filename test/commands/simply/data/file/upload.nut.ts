@@ -18,7 +18,7 @@ describe('simply data file upload', () => {
     session = await TestSession.create({
       devhubAuthStrategy: 'AUTO',
       project: {
-        gitClone: 'https://github.com/SimplySF/easy-spaces-lwc',
+        sourceDir: path.join(process.cwd(), 'test/reference-project'),
       },
       scratchOrgs: [
         {
@@ -29,19 +29,19 @@ describe('simply data file upload', () => {
     });
   });
 
-  after(async () => {
-    await session?.clean();
-  });
-
   it('should upload content version', () => {
     const username = [...session.orgs.keys()][0];
-    const command = `simply data file upload --file-path docs/upload_icon.png --target-org ${username}`;
+    const command = `simply data file upload --file-path test-files/watchDoge.jpg --target-org ${username} --json`;
     const output = execCmd<ContentVersion>(command, {
       ensureExitCode: 0,
       timeout: Duration.minutes(30).milliseconds,
     }).jsonOutput;
 
-    expect(output!.result.FileExtension).equals('png');
-    expect(output!.result.Title).equals('upload_icon.png');
+    expect(output!.result.FileExtension).equals('jpg');
+    expect(output!.result.Title).equals('watchDoge.jpg');
+  });
+
+  after(async () => {
+    await session?.clean();
   });
 });

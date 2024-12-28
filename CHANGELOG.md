@@ -1,3 +1,12 @@
+# [1.10.0](https://github.com/SimplySF/simply-data/compare/1.9.1...1.10.0) (2024-12-28)
+
+
+### Features
+
+* update reference project and fix nuts ([9fa2fc8](https://github.com/SimplySF/simply-data/commit/9fa2fc875238029dbbc4665a7d55616d6eaf9f51))
+
+
+
 ## [1.9.1](https://github.com/SimplySF/simply-data/compare/1.9.0...1.9.1) (2024-12-27)
 
 

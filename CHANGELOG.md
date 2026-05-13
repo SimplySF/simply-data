@@ -1,3 +1,13 @@
+## [2.1.1](https://github.com/SimplySF/simply-data/compare/2.1.0...2.1.1) (2026-05-13)
+
+
+### Bug Fixes
+
+* cleanup noisy terminal output ([825d5f6](https://github.com/SimplySF/simply-data/commit/825d5f6d5b33ff3060dd30435fe63d73d192f2d5))
+* rollback got to v14 ([19a2149](https://github.com/SimplySF/simply-data/commit/19a2149e4d54b5ce0de356c9963d841cf8f6084b))
+
+
+
 # [2.1.0](https://github.com/SimplySF/simply-data/compare/1.10.0...2.1.0) (2026-05-13)
 
 

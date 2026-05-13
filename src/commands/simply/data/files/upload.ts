@@ -89,16 +89,16 @@ export default class DataFilesUpload extends SfCommand<void> {
 
     const parser = fs.createReadStream(flags['file-path']).pipe(parse({ bom: true, columns: true }));
 
-    this.spinner.start('Uploading files', 'Initializing\n', { stdout: true });
+    this.spinner.start('Uploading files', 'Initializing', { stdout: true });
 
     let count = 0;
     fileQueue.on('add', () => {
-      this.spinner.status = `Completed: ${count}. Size: ${fileQueue.size}  Pending: ${fileQueue.pending}\n`;
+      this.spinner.status = `Completed: ${count}. Size: ${fileQueue.size}  Pending: ${fileQueue.pending}`;
     });
 
     fileQueue.on('completed', () => {
       count++;
-      this.spinner.status = `Completed: ${count}. Size: ${fileQueue.size}  Pending: ${fileQueue.pending}\n`;
+      this.spinner.status = `Completed: ${count}. Size: ${fileQueue.size}  Pending: ${fileQueue.pending}`;
     });
 
     for await (const record of parser) {

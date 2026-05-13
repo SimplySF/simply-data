@@ -1,34 +1,32 @@
 {
   "name": "@simplysf/simply-data",
   "description": "Utilities for working with data",
-  "version": "1.10.0",
+  "version": "2.0.0",
   "author": "@ClayChipps",
   "bugs": "https://github.com/SimplySF/simply-data/issues",
   "dependencies": {
-    "@oclif/core": "^4.0.31",
-    "@salesforce/core": "^8.6.4",
-    "@salesforce/kit": "^3.2.3",
-    "@salesforce/sf-plugins-core": "^12.0.11",
-    "csv-parse": "^5.5.6",
+    "@oclif/core": "^4.11.2",
+    "@salesforce/core": "^8.30.0",
+    "@salesforce/kit": "^3.2.6",
+    "@salesforce/sf-plugins-core": "^12.2.16",
+    "csv-parse": "^6.2.1",
     "csv-writer": "^1.6.0",
-    "form-data": "^4.0.1",
-    "got": "13.0.0",
-    "p-queue": "^8.0.1"
+    "form-data": "^4.0.5",
+    "got": "15.0.5",
+    "p-queue": "^9.2.0"
   },
   "devDependencies": {
-    "@oclif/plugin-command-snapshot": "^5.2.21",
-    "@salesforce/cli-plugins-testkit": "^5.3.39",
-    "@salesforce/plugin-command-reference": "^3.1.32",
-    "@salesforce/ts-sinon": "^1.4.29",
-    "@simplysf/dev-scripts": "^3.3.1",
-    "eslint-plugin-sf-plugin": "^1.20.11",
-    "nock": "^13.5.5",
-    "oclif": "^4.15.19",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.6.3"
+    "@oclif/plugin-command-snapshot": "^5.3.19",
+    "@salesforce/cli-plugins-testkit": "^5.3.57",
+    "@salesforce/plugin-command-reference": "^3.1.99",
+    "@salesforce/ts-sinon": "^1.4.34",
+    "@simplysf/dev-scripts": "^11.1.1",
+    "eslint-plugin-sf-plugin": "^1.20.33",
+    "nock": "^14.0.15",
+    "oclif": "^4.23.0"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=22.0.0"
   },
   "files": [
     "/lib",
@@ -47,7 +45,7 @@
     "sf-plugin",
     "sf"
   ],
-  "license": "BSD-3-Clause",
+  "license": "Apache-2.0",
   "oclif": {
     "bin": "sf",
     "commands": "./lib/commands",
@@ -83,6 +81,7 @@
     "clean-all": "sf-clean all",
     "compile": "wireit",
     "docs": "sf-docs",
+    "fix-license": "eslint src test --fix --rule \"header/header: [2]\"",
     "format": "wireit",
     "link-check": "wireit",
     "lint": "wireit",
@@ -204,7 +203,7 @@
       "output": []
     },
     "link-check": {
-      "command": "node -e \"process.exit(process.env.CI ? 0 : 1)\" || linkinator \"**/*.md\" --skip \"https://npmjs.com/@simplysf/simply-data\" --skip \"CHANGELOG.md|node_modules|test/|confluence.internal.salesforce.com|my.salesforce.com|%s\" --markdown --retry --directory-listing --verbosity error",
+      "command": "node -e \"process.exit(process.env.CI ? 0 : 1)\" || linkinator \"**/*.md\" --skip \"CHANGELOG.md|node_modules|test/|confluence.internal.salesforce.com|my.salesforce.com|localhost|%s\" --markdown --retry --directory-listing --verbosity error",
       "files": [
         "./*.md",
         "./!(CHANGELOG).md",

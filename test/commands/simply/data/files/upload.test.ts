@@ -1,8 +1,17 @@
 /*
- * Copyright (c) 2024, Clay Chipps; Copyright (c) 2024, Salesforce.com, Inc.
- * All rights reserved.
- * Licensed under the BSD 3-Clause license.
- * For full license text, see LICENSE.txt file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+ * Copyright (c) 2026, Clay Chipps; Copyright (c) 2026 Salesforce, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 import fs from 'node:fs';
@@ -54,14 +63,14 @@ describe('simply data files upload', () => {
       testOrg.username,
     ]);
 
-    const errorResults = parse(fs.readFileSync('upload/error.csv'), {
+    const errorResults = parse<ContentVersionToUpload>(fs.readFileSync('upload/error.csv'), {
       bom: true,
       columns: true,
-    }) as ContentVersionToUpload[];
-    const successResults = parse(fs.readFileSync('upload/success.csv'), {
+    });
+    const successResults = parse<ContentVersionToUpload>(fs.readFileSync('upload/success.csv'), {
       bom: true,
       columns: true,
-    }) as ContentVersionToUpload[];
+    });
 
     expect(errorResults[0].Error).to.contain('Error: ENOENT: no such file or directory');
     expect(successResults).to.deep.equal([

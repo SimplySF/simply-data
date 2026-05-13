@@ -1,3 +1,19 @@
+# [2.1.0](https://github.com/SimplySF/simply-data/compare/1.10.0...2.1.0) (2026-05-13)
+
+
+### Bug Fixes
+
+* bad linkinator command ([32d6fdc](https://github.com/SimplySF/simply-data/commit/32d6fdc8f23f0c506dbcdaf4fe45f38e3d28c488))
+* skip linkinator check on npm link ([5ffab7c](https://github.com/SimplySF/simply-data/commit/5ffab7caf5b0b1abba92951ffd77e05f2b6347ae))
+
+
+### Features
+
+* add id-token permission ([77fd743](https://github.com/SimplySF/simply-data/commit/77fd743d9472f254195e3f3b1c938c1f9bb4f77c))
+* upgrade to node v22 ([4dfd8a5](https://github.com/SimplySF/simply-data/commit/4dfd8a54948797376f9984ae4170cfa61e8823c9))
+
+
+
 # [1.10.0](https://github.com/SimplySF/simply-data/compare/1.9.1...1.10.0) (2024-12-28)
 
 

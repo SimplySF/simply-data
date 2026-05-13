@@ -23,7 +23,8 @@
     "@simplysf/dev-scripts": "^11.1.1",
     "eslint-plugin-sf-plugin": "^1.20.33",
     "nock": "^14.0.15",
-    "oclif": "^4.23.0"
+    "oclif": "^4.23.0",
+    "ts-node": "^10.9.2"
   },
   "engines": {
     "node": ">=22.0.0"
